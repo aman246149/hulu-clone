@@ -1,21 +1,22 @@
-.moviecard{
+.moviecardRow{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     margin: 2rem;
 }
 
-/* .card{
+.card{
  
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
-} */
+}
 
-/* .image__container{
+.image__container{
     grid-row: 1/2;
-} */
-/* 
+    /* height: 200px; */
+}
+
 .image__container img{
     width: 100%;
     height: 100%;
@@ -26,4 +27,4 @@
     grid-row: 2/3;
     justify-self: start;
     align-self: center;
-} */
+}
