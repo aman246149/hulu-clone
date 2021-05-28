@@ -1,0 +1,22 @@
+.movielist{
+    
+overflow: hidden;
+}
+
+
+.movie-list{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    font-size: large;
+     
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.movie-list h5{
+    margin-left: 50px;
+}

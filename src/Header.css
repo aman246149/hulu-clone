@@ -1,0 +1,78 @@
+.container{
+display: grid;
+grid-template-columns: repeat(12,1fr);    
+grid-template-rows: auto 50px auto 300px;
+color: white;
+background-color: rgba(12, 30, 43, 255);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+.left-part{
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20px;
+    
+}
+
+.right-part{
+    grid-column: 8/12;
+
+    font-size: x-large;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.movie-list{
+    display: flex;
+    overflow-y: hidden;
+    color: white;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+}
+
+h5{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+
+footer{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+
+
+/* movie card */
+
+.movieContainer{
+    grid-column: 1/-1;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: repeat(auto, auto);
+
+
+}
+
+.movieContainer img{
+    width: 100%;
+}
