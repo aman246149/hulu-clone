@@ -1,5 +1,7 @@
 import React from 'react'
+import MovieCard from './MovieCard'
 import './Row.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 function Row(props) {
@@ -10,10 +12,12 @@ function Row(props) {
        <div className="moviecardRow">
            <div className="card">
                <div className="image__container">
-                   <img src={props.image} alt="" />
+                   <LazyLoadImage src={props.image} alt="" 
+                   effect="blur"
+                   />
                </div>
                <div className="title">
-                   <h5>BEST IMAGE IN THE WORLD</h5>
+                   <h5>{props.title}</h5>
                </div>
            </div>
          
